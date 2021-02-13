@@ -2,7 +2,7 @@
 <div></div>
 </template>
 <script>
-import data from './assets/data/preturi.json'
+import data from './../assets/data/data.json'
 export default {
   created() {
     console.log(data)
