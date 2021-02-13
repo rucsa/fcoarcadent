@@ -1,5 +1,6 @@
 <template>
-  <div class="cover container-fluid">
+  <!-- <div class="cover container-fluid"> -->
+  <div>
     <Cover />
     <DespreComponent />
     <Servicii />
