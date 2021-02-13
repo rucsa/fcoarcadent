@@ -13,19 +13,20 @@ import NavMenu from './../components/NavMenu'
 import Footer from './../components/Footer'
 export default {
   components: {
-    NavMenu, Footer
+    NavMenu,
+    Footer
   }
 }
 </script>
 
 <style lang="scss">
 a {
-   text-decoration: none;
-   color: black;
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-   text-decoration: none;
-   color: black;
+  text-decoration: none;
+  color: black;
 }
 .section {
   margin: 3em 0;

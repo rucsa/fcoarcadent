@@ -1,17 +1,14 @@
 <template>
-    <div class="card">
-    </div>
+  <div class="card"></div>
 </template>
 <script>
-export default {
-    
-}
+export default {}
 </script>
 <style scoped>
 .card {
-    margin: .5em;
-    width: 11em;
-    height: 11em;
-    border-radius: 6px;
+  margin: 0.5em;
+  width: 11em;
+  height: 11em;
+  border-radius: 6px;
 }
 </style>

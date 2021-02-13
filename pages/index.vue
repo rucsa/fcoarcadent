@@ -15,7 +15,10 @@ import DespreComponent from './../components/DespreComponent'
 
 export default {
   components: {
-    Cover, DespreComponent, Servicii, Contact
+    Cover,
+    DespreComponent,
+    Servicii,
+    Contact
   },
   data() {
     return {
@@ -37,7 +40,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-
-</style>
+<style lang="scss"></style>
