@@ -1,25 +1,21 @@
 <template>
-  <div>
-    <NavMenu />
-    <div>
-      <Nuxt />
-    </div>
-    <Footer />
-  </div>
+  <v-app>
+    <v-main>
+      <NavMenu />
+      <v-container>
+        <nuxt />
+      </v-container>
+      <Footer />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import NavMenu from './../components/NavMenu'
-import Footer from './../components/Footer'
 export default {
-  components: {
-    NavMenu,
-    Footer
-  }
+
 }
 </script>
-
-<style lang="scss">
+<style scoped>
 a {
   text-decoration: none;
   color: black;
@@ -36,10 +32,6 @@ a:hover {
   flex-direction: row;
   justify-content: center;
 }
-.blue {
-  background-color: $blue;
-}
-
 .text-medium {
   font-weight: 400;
 }

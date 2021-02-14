@@ -1,19 +1,19 @@
 <template>
-  <div class="container">
-    <div class="about-intro flex">
-      <div class="about-intro-text">
+  <div class="">
+    <div class="">
+      <div class="">
         <p>Medic titular: {{ name }}</p>
         <p>Grad medical: {{ grad }}</p>
         <p>Experiență: {{ experienta }}</p>
         <p>Perfecționare profesională: {{ perfectionare }}</p>
         <p>Atitudine: {{ atitudine }}</p>
-        <h3 class="special-text">{{ specialtext }}</h3>
+        <h3 class="">{{ specialtext }}</h3>
       </div>
       <div class="about-intro-img"></div>
     </div>
     <div>
-      <div class="despre-servicii">
-        <div class="card-container flex">
+      <div class="">
+        <div class="">
           <IconCard
             imagesrc="~/assets/icons/1.png"
             card-text="Profesionalismul si dedicatia personalului medical"
@@ -37,12 +37,8 @@
 </template>
 
 <script>
-import IconCard from '~/components/IconCard.vue'
 export default {
   name: 'About',
-  components: {
-    IconCard
-  },
   data() {
     return {
       name: 'Coarcă Filofteia',
@@ -67,9 +63,6 @@ export default {
 </script>
 
 <style scoped>
-.about-intro {
-  width: 100%;
-}
 .about-intro-img {
   width: 900px;
   height: 350px;
@@ -78,10 +71,4 @@ export default {
   background-image: url('./../assets/DSC_0206.jpg');
   background-repeat: no-repeat;
 }
-.about-intro-text {
-  padding: 5vh 5vw;
-}
-.card-container {
-  justify-content: space-between;
-}</style
->s
+</style>
