@@ -11,41 +11,37 @@
       </div>
       <div class="about-intro-img"></div>
     </div>
-    <div v-if="showSpecs">
+    <div>
       <div class="despre-servicii">
-        <h1 class="centered-text">
-          Calitatea serviciilor noastre stomatologice este un mix intre:
-        </h1>
-      </div>
-      <div class="card-container flex">
-        <Card
-          icon="true"
-          imagesrc="icon-professional.jpg"
-          card-text="Profesionalismul si dedicatia personalului medical"
-        />
-        <Card
-          card-title="ICON"
-          card-text="Aparatura medicala stomatologica de ultima generatie"
-        />
-        <Card
-          card-title="ICON"
-          card-text="Tehnici medicale stomatologice inovatoare"
-        />
-        <Card
-          card-title="ICON"
-          card-text="Adresabilitate maxima corespunzatoare cerințelor pacienților"
-        />
+        <div class="card-container flex">
+          <SimpleCard
+            imagesrc="~/assets/icons/1.png"
+            card-text="Profesionalismul si dedicatia personalului medical"
+          />
+          <SimpleCard
+            imagesrc="~/assets/icons/2.png"
+            card-text="Aparatura medicala stomatologica de ultima generatie"
+          />
+          <SimpleCard
+            imagesrc="~/assets/icons/3.png"
+            card-text="Tehnici medicale stomatologice inovatoare"
+          />
+          <SimpleCard
+            imagesrc="~/assets/icons/4.png"
+            card-text="Adresabilitate maxima corespunzatoare cerințelor pacienților"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Card from '~/components/Card.vue'
+import SimpleCard from '~/components/SimpleCard.vue'
 export default {
   name: 'About',
   components: {
-    Card
+    SimpleCard
   },
   data() {
     return {
@@ -56,8 +52,7 @@ export default {
       perfectionare:
         'Continuă prin participare la congrese, simpozioane, workshopuri, cursuri de perfecționare în stomatologie',
       atitudine: 'Hotărîre, perseverență, apropiat și înțelegător cu pacienții',
-      specialtext: 'Apreciată de micii pacienti',
-      showSpecs: false
+      specialtext: 'Apreciată de micii pacienti'
     }
   },
   computed: {

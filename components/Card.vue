@@ -13,10 +13,6 @@ export default {
       type: String,
       default: ''
     },
-    icon: {
-      type: String,
-      default: ''
-    },
     cardTitle: {
       type: String,
       default: ''
@@ -62,5 +58,5 @@ h3 {
   height: 5em;
   z-index: 1;
   opacity: 0.2;
-}
-</style>
+}</style
+>s

@@ -1,6 +1,6 @@
 <template>
-  <div class="card">
-    <h3 class="round-shadow">{{ cardTitle }}</h3>
+  <div>
+    <h3>{{ cardTitle }}</h3>
     <div v-for="item in cardContent" :key="item.service">
       <PriceItem :service="item.service" :price="item.price" />
     </div>
@@ -20,7 +20,6 @@ export default {
       type: Array,
       default: null
     }
-  },
-  created() {}
+  }
 }
 </script>
