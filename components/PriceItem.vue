@@ -1,19 +1,18 @@
 <template>
-  <div class="card">
-    <div class="">
-      <h3>{{ cardTitle }}</h3>
-    </div>
+  <div class="flex wrap-row">
+    <p>{{ service }}</p>
+    <p>{{ price }}</p>
   </div>
 </template>
 <script>
 export default {
-  name: 'Card',
+  name: 'PriceItem',
   props: {
-    cardTitle: {
+    service: {
       type: String,
       default: ''
     },
-    cardText: {
+    price: {
       type: String,
       default: ''
     }
@@ -21,9 +20,11 @@ export default {
 }
 </script>
 <style scoped>
-.card {
-  margin: 1em;
-  height: 10em;
-  width: 15em;
+.wrap-row {
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.3em;
 }
 </style>

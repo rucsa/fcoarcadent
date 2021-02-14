@@ -1,4 +1,3 @@
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -29,7 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/scss/colors.scss',
+    '~/assets/scss/colors.scss',
     '~/assets/fonts/fonts.css'
   ],
   /*
@@ -52,8 +51,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify'
   ],

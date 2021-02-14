@@ -1,15 +1,16 @@
 <template>
-  <div class="card">
+  <div class="card centered-text square-shadow">
     <div class="">
-      <h3>{{ cardTitle }}</h3>
+      <p>TODO: add icon from {{ imagesrc }}</p>
+      <p>{{ cardText }}</p>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'Card',
+  name: 'IconCard',
   props: {
-    cardTitle: {
+    imagesrc: {
       type: String,
       default: ''
     },
@@ -25,5 +26,6 @@ export default {
   margin: 1em;
   height: 10em;
   width: 15em;
+  background-color: grey;
 }
 </style>
