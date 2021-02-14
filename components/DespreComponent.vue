@@ -58,7 +58,7 @@ export default {
   width: 60vw;
   height: 300px;
   display: block;
-  background-image: url('./../assets/DSC_0206.jpg');
+  background-image: url('./../assets/img/DSC_0160.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

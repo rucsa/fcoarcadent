@@ -6,7 +6,7 @@
     <div class="menu">
       <ul class="nav w-100 justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Despre</a>
+          <a class="nav-link active" href="/about">Despre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Servicii Stomatologice</a>
