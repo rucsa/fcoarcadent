@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div>
     <NavMenu />
     <div>
       <Nuxt />
@@ -70,5 +70,8 @@ a:hover {
 
 .nav-containter {
   height: 30px;
+}
+* {
+  font-family: 'Montserrat';
 }
 </style>
