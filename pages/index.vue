@@ -1,32 +1,21 @@
 <template>
-  <!-- <div class="cover container-fluid"> -->
-  <div>
+  <v-container>
+    <span class="red--text">Class works!</span>
     <Cover />
-    <DespreComponent />
+        <DespreComponent />
     <Servicii />
     <Contact />
-  </div>
+  </v-container>
 </template>
 
 <script>
-import Cover from './../components/Cover'
-import Servicii from './../components/Servicii'
-import Contact from './../components/Contact'
-import DespreComponent from './../components/DespreComponent'
-
 export default {
-  components: {
-    Cover,
-    DespreComponent,
-    Servicii,
-    Contact
-  },
   data() {
-    return {
-      title: 'Cabinet Stomatologic dr. Filofteia Coarca'
-    }
-  },
-  head() {
+      return {
+        title: 'Cabinet Stomatologic dr. Filofteia Coarca'
+      }
+    },
+    head() {
     return {
       title: this.title,
       meta: [
@@ -40,5 +29,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss"></style>
