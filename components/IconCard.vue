@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'SimpleCard',
+  name: 'IconCard',
   props: {
     imagesrc: {
       type: String,

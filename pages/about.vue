@@ -14,19 +14,19 @@
     <div>
       <div class="despre-servicii">
         <div class="card-container flex">
-          <SimpleCard
+          <IconCard
             imagesrc="~/assets/icons/1.png"
             card-text="Profesionalismul si dedicatia personalului medical"
           />
-          <SimpleCard
+          <IconCard
             imagesrc="~/assets/icons/2.png"
             card-text="Aparatura medicala stomatologica de ultima generatie"
           />
-          <SimpleCard
+          <IconCard
             imagesrc="~/assets/icons/3.png"
             card-text="Tehnici medicale stomatologice inovatoare"
           />
-          <SimpleCard
+          <IconCard
             imagesrc="~/assets/icons/4.png"
             card-text="Adresabilitate maxima corespunzatoare cerințelor pacienților"
           />
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import SimpleCard from '~/components/SimpleCard.vue'
+import IconCard from '~/components/IconCard.vue'
 export default {
   name: 'About',
   components: {
-    SimpleCard
+    IconCard
   },
   data() {
     return {
