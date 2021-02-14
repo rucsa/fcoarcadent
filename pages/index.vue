@@ -1,8 +1,7 @@
 <template>
-  <v-container>
-    <span class="red--text">Class works!</span>
+  <v-container fluid class="pa-0 ma-0">
     <Cover />
-        <DespreComponent />
+    <DespreComponent />
     <Servicii />
     <Contact />
   </v-container>
@@ -11,11 +10,11 @@
 <script>
 export default {
   data() {
-      return {
-        title: 'Cabinet Stomatologic dr. Filofteia Coarca'
-      }
-    },
-    head() {
+    return {
+      title: 'Cabinet Stomatologic dr. Filofteia Coarca'
+    }
+  },
+  head() {
     return {
       title: this.title,
       meta: [

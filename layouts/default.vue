@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <NavMenu />
-      <v-container>
+      <v-container class="pa-0 ma-0" fluid>
         <nuxt />
       </v-container>
       <Footer />
@@ -11,9 +11,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 <style scoped>
 a {
@@ -63,7 +61,7 @@ a:hover {
 .nav-containter {
   height: 30px;
 }
-* {
+/* * {
   font-family: 'Montserrat';
-}
+} */
 </style>
