@@ -83,5 +83,5 @@ export default {
 }
 .card-container {
   justify-content: space-between;
-}</style
->s
+}
+</style>

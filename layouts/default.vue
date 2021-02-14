@@ -36,10 +36,6 @@ a:hover {
   flex-direction: row;
   justify-content: center;
 }
-.blue {
-  background-color: $blue;
-}
-
 .text-medium {
   font-weight: 400;
 }
