@@ -1,5 +1,120 @@
 <template>
-  <div class="section servicii">
+  <v-container class="my-12" fluid style="background-color: #05aff2;">
+    <v-row class="mb-12">
+      <v-col>
+        <h2 class="font-weight-bold text-center white--text">
+          Servicii
+        </h2>
+      </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-card flat tile max-width="700px" color="transparent">
+        <v-row justify="center">
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/profilaxie.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  PROFILAXIE
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/estetica.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  ESTETICA DENTARA
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/Endodontie.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  ENDODONTIE
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/protetica.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  PROTETICA
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img
+                :src="require('./../assets/chirurgie-dentara.png')"
+              ></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  CHIRURGIE DENTARA
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/parodontologie.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  PARODONTOLOGIE
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="3">
+            <v-card class="mx-auto" max-width="160" tile>
+              <v-img :src="require('./../assets/ortodontie.png')"></v-img>
+
+              <v-card-text>
+                <div
+                  class="text-center"
+                  style="color: #05aff2; font-size: 12px;"
+                >
+                  ORTODONTIE
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-row>
+  </v-container>
+  <!-- <div class="section servicii">
     <h1 class="center">Servicii Stomatologice</h1>
     <div class="card-container">
       <Card class="profilaxie" card-title="PROFILAXIE" card-text="cardtext1" />
@@ -22,7 +137,7 @@
       />
       <Card class="ortodontie" card-title="ORTODONTIE" card-text="cardtext1" />
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
 export default {

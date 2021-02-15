@@ -2,7 +2,7 @@
   <div>
     <v-app-bar style="background-color: #05aff2;" dense>
       <v-container>
-        <v-row style="text-align: start;">
+        <v-row align="center">
           <v-col sm="3" md="2" lg="2">
             <v-toolbar-title
               style="color: white; font-family: Montserrat; font-weight: bold;"
@@ -52,6 +52,7 @@
 
             <a
               style="
+                color: #212121;
                 background-color: #f2b705;
                 border-radius: 25px;
                 text-align: center;
@@ -148,4 +149,10 @@ export default {
 .logo h1 {
   color: white;
 } */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 </style>

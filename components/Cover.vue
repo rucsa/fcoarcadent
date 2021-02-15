@@ -3,7 +3,7 @@
     <v-container class="pa-0 ma-0" fluid>
       <v-row>
         <v-col>
-          <v-card flat tile>
+          <v-card v-if="$vuetify.breakpoint.smAndUp" flat tile>
             <v-img max-height="702px" :src="require(`./../assets/LPPhoto.png`)">
               <!-- <v-container
               class="pa-0 red align-center"
@@ -17,26 +17,27 @@
                     cols="3"
                     sm="5"
                     md="4"
-                    lg="3"
+                    lg="5"
                     style="
                       background-color: #05aff2;
                       border-top-right-radius: 5px;
                       border-bottom-right-radius: 5px;
                     "
                   >
-                    <h2 style="text-align: end; font-size: 22px;">
+                    <h2 style="text-align: end; font-size: 25px;">
                       {{ title }}
                     </h2>
                   </v-col>
                 </v-row>
                 <v-row>
-                  <v-col cols="3" sm="5" md="4" lg="3">
+                  <v-col cols="3" sm="5" md="4" lg="4">
                     <h2
                       class="font-italic"
                       style="
                         color: #05aff2;
                         font-family: Ananda;
                         text-align: end;
+                        font-size: 25px;
                       "
                     >
                       {{ title2 }}
@@ -67,9 +68,11 @@
                   <v-col cols="3" class="offset-2">
                     <a
                       style="
+                        color: #2d2d2d;
                         background-color: #f2b705;
-                        border-radius: 5px;
+                        border-radius: 25px;
                         text-align: center;
+                        text-decoration: none;
                       "
                       class="px-3 pa-1"
                       href="#"
@@ -83,6 +86,45 @@
               <!-- </v-container> -->
             </v-img>
           </v-card>
+          <v-container
+            v-if="$vuetify.breakpoint.xsOnly"
+            fluid
+            class="px-0"
+            style="background-color: #e3e3e3;"
+          >
+            <v-row>
+              <v-col cols="12">
+                <h2
+                  class="font-weight-medium text-center"
+                  style="font-size: 22px;"
+                >
+                  {{ title }}
+                </h2>
+              </v-col>
+              <!-- </v-row>
+            <v-row> -->
+              <v-col cols="12">
+                <h1
+                  class="font-italic text-center"
+                  style="background-color: #05aff2; font-family: Ananda;"
+                >
+                  {{ title2 }}
+                </h1>
+              </v-col>
+              <!-- </v-row>
+            <v-row> -->
+              <v-col cols="12">
+                <h4
+                  style="font-size: 20px;"
+                  class="font-weight-medium text-center"
+                >
+                  <span>Lucrăm cu oameni </span><br /><span
+                    >și pentru oameni</span
+                  >
+                </h4>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-col>
       </v-row>
     </v-container>
@@ -150,4 +192,8 @@ h2,
   height: 20em;
   border: 1px solid black;
 } */
+
+a:hover {
+  text-decoration: none;
+}
 </style>
