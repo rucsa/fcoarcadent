@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-app-bar style="background-color: #05aff2;" dense>
+    <v-app-bar style="background-color: #05aff2;" app dense>
       <v-container>
-        <v-row align="center">
+        <v-row align="center" no-gutters>
           <v-col sm="3" md="2" lg="2">
             <v-toolbar-title
               style="color: white; font-family: Montserrat; font-weight: bold;"
@@ -24,7 +24,7 @@
                 'mr-3': $vuetify.breakpoint.sm
               }"
               style="color: white;"
-              href="#"
+              href="/about/"
               >Despre</a
             >
 
@@ -77,15 +77,21 @@
           >
             <v-list nav dense>
               <v-list-item-group>
-                <v-list-item>
+                <v-list-item
+                  v-for="item in items"
+                  :key="item.title"
+                  :to="item.to"
+                >
                   <v-list-item-title
+                    class="text-center"
                     style="color: white; font-family: Montserrat;"
-                    >Despre</v-list-item-title
+                    >{{ item.title }}</v-list-item-title
                   >
                 </v-list-item>
 
-                <v-list-item>
+                <!-- <v-list-item>
                   <v-list-item-title
+                    class="text-center"
                     style="color: white; font-family: Montserrat;"
                     >Servicii Stomatologice</v-list-item-title
                   >
@@ -93,6 +99,7 @@
 
                 <v-list-item>
                   <v-list-item-title
+                    class="text-center"
                     style="color: white; font-family: Montserrat;"
                     >Preturi</v-list-item-title
                   >
@@ -100,12 +107,17 @@
 
                 <v-list-item>
                   <v-list-item-title
+                    class="text-center"
                     style="color: white; font-family: Montserrat;"
                     >Contact</v-list-item-title
                   >
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
+                </v-list-item> -->
+              </v-list-item-group> </v-list
+            ><v-row>
+              <v-col cols="12" class="text-center">
+                <v-icon @click.stop="drawer = !drawer">mdi-close</v-icon>
+              </v-col>
+            </v-row>
           </v-navigation-drawer>
         </v-row>
       </v-container>
@@ -137,7 +149,13 @@
 export default {
   name: 'NavMenu',
   data: () => ({
-    drawer: false
+    drawer: false,
+    items: [
+      { title: 'Despre', to: '/' },
+      { title: 'Servicii Stomatologice', to: '/' },
+      { title: 'Preturi', to: '/preturi' },
+      { title: 'Contact', to: '/' }
+    ]
   })
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="#05AFF2" padless app>
+  <v-footer color="#05AFF2" padless absolute>
     <v-container>
       <v-row justify="center">
         <v-col cols="12" sm="9" md="9" lg="9" :align="changeAlign()">

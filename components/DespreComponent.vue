@@ -35,7 +35,7 @@
                   text-decoration: none;
                 "
                 class="px-3 pa-1"
-                href="#"
+                to="/about/"
                 >Citeste mai multe</a
               >
             </v-card-actions>
@@ -72,7 +72,7 @@
                 text-decoration: none;
               "
               class="px-3 pa-1"
-              href="#"
+              to="/about/"
               >Citeste mai multe</a
             >
           </v-card-actions>
@@ -107,11 +107,11 @@
   </div> -->
 </template>
 <script>
-import Button from '~/components/Button.vue'
+// import Button from '~/components/Button.vue'
 
 export default {
   name: 'DespreComponent',
-  components: { Button },
+  // components: { Button },
   data() {
     return {
       aboutUsText1:

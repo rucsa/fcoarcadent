@@ -10,8 +10,8 @@
     <v-row justify="center">
       <v-card flat tile max-width="700px" color="transparent">
         <v-row justify="center">
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/profilaxie.png')"></v-img>
 
               <v-card-text>
@@ -24,8 +24,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/estetica.png')"></v-img>
 
               <v-card-text>
@@ -38,8 +38,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/Endodontie.png')"></v-img>
 
               <v-card-text>
@@ -52,8 +52,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/protetica.png')"></v-img>
 
               <v-card-text>
@@ -66,8 +66,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img
                 :src="require('./../assets/chirurgie-dentara.png')"
               ></v-img>
@@ -82,8 +82,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/parodontologie.png')"></v-img>
 
               <v-card-text>
@@ -96,8 +96,8 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="3">
-            <v-card class="mx-auto" max-width="160" tile>
+          <v-col cols="6" sm="4" md="3" lg="3">
+            <v-card class="mx-auto" max-width="200" tile>
               <v-img :src="require('./../assets/ortodontie.png')"></v-img>
 
               <v-card-text>
@@ -109,6 +109,36 @@
                 </div>
               </v-card-text>
             </v-card>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="6" class="text-right">
+            <a
+              style="
+                color: #2d2d2d;
+                background-color: #f2b705;
+                border-radius: 25px;
+                text-align: center;
+                text-decoration: none;
+              "
+              class="px-3 pa-1"
+              href="#"
+              >Preturi</a
+            >
+          </v-col>
+          <v-col cols="6" class="text-left">
+            <a
+              style="
+                color: #2d2d2d;
+                background-color: #f2b705;
+                border-radius: 25px;
+                text-align: center;
+                text-decoration: none;
+              "
+              class="px-3 pa-1"
+              href="#"
+              >Contact</a
+            >
           </v-col>
         </v-row>
       </v-card>
