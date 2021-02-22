@@ -5,26 +5,35 @@
       fluid
       class="px-0 pb-16 mb-16"
     >
-      <v-row class="pa-15">
-        <v-col>
+      <v-row class="pa-25 pb-10">
+        <v-col
+          cols="12"
+          style="font-family: Montserrat; font-weight: bold; font-size: 20px;"
+        >
           <h2 class="text-center">Contact</h2>
         </v-col>
       </v-row>
-      <v-row no-gutters>
+      <v-row no-gutters class="pb-10 mb-10">
         <v-col cols="8">
-          <v-card flat tile style="background-color: #f2b705; height: 225px;">
+          <v-card flat tile style="background-color: #f2b705; height: 270px;">
             <v-card-text>
               <v-row>
-                <v-col class="offset-1" style="color: #202020;">
-                  <h5 class="font-weight-bold">
+                <v-col
+                  class="offset-1"
+                  style="font-family: Montserrat; color: #202020;"
+                >
+                  <h5 style="font-size: 20px; font-weight: bold;" class="pt-2">
                     Program
                   </h5>
-                  <div>L-V:</div>
-                  <div>10:00-17:00</div>
+                  <div style="font-size: 20px;">L-V:</div>
+                  <div style="font-size: 18px;">10:00-17:00</div>
                   <br />
-                  <h5 class="font-weight-bold">Adresa:</h5>
-                  <div>str. Elocinței nr. 36, Sector 1, București</div>
-                  <h5 class="font-weight-bold">+4 0724 545 168</h5>
+                  <h5 style="font-size: 20px; font-weight: bold;">Adresa</h5>
+                  <div>str. Elocinței nr. 36, <br />Sector 1, București</div>
+                  <br />
+                  <h5 style="font-size: 20px; font-weight: bold;">
+                    +4 0724 545 168
+                  </h5>
                   <div>filofteiacoarca@yahoo.com</div>
                 </v-col>
               </v-row>

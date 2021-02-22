@@ -1,8 +1,11 @@
 <template>
   <div>
     <v-container v-if="$vuetify.breakpoint.smAndUp">
-      <v-row class="pt-15 pb-3">
-        <v-col cols="12">
+      <v-row class="pt-15 pb-14">
+        <v-col
+          cols="12"
+          style="font-family: Montserrat; font-weight: bold; font-size: 20px;"
+        >
           <h2 class="text-center">Despre noi</h2>
         </v-col>
       </v-row>
@@ -18,26 +21,27 @@
         </v-col>
         <v-col cols="5" class="offset-1">
           <v-card flat tile>
-            <v-card-text style="color: #2d2d2d; font-size: 13px;">
+            <v-card-text class="pr-10" style="color: #2d2d2d; font-size: 1rem;">
               {{ aboutUsText1 }}
               <br /><br />
-
               {{ aboutUsText2 }}
             </v-card-text>
-            <v-card-title class="font-italic">{{ specialText }} </v-card-title>
+            <v-card-title
+              class="font-italic"
+              style="font-family: Ananda; font-size: 25px; mx-1"
+              >{{ specialText }}
+            </v-card-title>
             <v-card-actions>
-              <a
-                style="
-                  color: #2d2d2d;
-                  background-color: #f2b705;
-                  border-radius: 25px;
-                  text-align: center;
-                  text-decoration: none;
-                "
-                class="px-3 pa-1"
-                to="/about/"
-                >Citeste mai multe</a
-              >
+              <Button
+                class="px-1"
+                button-title="Servicii"
+                @clicked="router.push('/about/')"
+              />
+              <Button
+                class="px-1"
+                button-title="Contact"
+                @clicked="router.push('/about/')"
+              />
             </v-card-actions>
           </v-card>
         </v-col>

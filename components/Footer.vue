@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="#05AFF2" padless absolute>
+  <v-footer color="#2f99ee" padless absolute>
     <v-container>
       <v-row justify="center">
         <v-col cols="12" sm="9" md="9" lg="9" :align="changeAlign()">
@@ -51,7 +51,7 @@
         </v-col>
         <v-col class="py-4 text-center" cols="12">
           <div style="color: white;">
-            {{ copyrights }}
+            {{ copyrights }} <span>&copy;</span>{{ '2020' }}
           </div>
         </v-col>
       </v-row>
@@ -64,8 +64,7 @@ export default {
   data() {
     return {
       alignChang: 'start',
-      copyrights:
-        '@2020 Cabinet Stomatologic Filofteia Coarca | Created by Vulpix',
+      copyrights: 'Cabinet Stomatologic Filofteia Coarca | Devix ',
       actionText: '+4 0724 545 168',
       links: ['Despre', 'Preturi', 'Servicii']
     }

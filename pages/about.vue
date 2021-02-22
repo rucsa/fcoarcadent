@@ -13,7 +13,7 @@
             <strong>Atitudine: </strong>{{ atitudine }} <br /><br />
             <div
               class="font-italic"
-              style="color: #05aff2; font-family: Italianno; font-size: 25px;"
+              style="color: #05aff2; font-family: Ananda; font-size: 25px;"
             >
               {{ specialtext }}
             </div>
@@ -31,70 +31,30 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center" align="center" class="py-16 my-16">
+    <v-row justify="center" align="center" class="mt-8 pb-16 mb-16">
       <v-col cols="12" sm="4" md="3" lg="3">
-        <v-card class="mx-auto" color="#05AFF2" width="250" height="250">
-          <v-card-text>
-            <v-img
-              class="mt-2"
-              style="display: block; margin-left: auto; margin-right: auto;"
-              width="50"
-              height="50"
-              :src="require(`./../assets/icons/1.png`)"
-            ></v-img>
-            <div class="text-center white--text mt-4" style="font-size: 12px;">
-              Profesionalismul și dedicația personalului medical
-            </div>
-          </v-card-text>
-        </v-card>
+        <IconCard
+          icon-number="1"
+          card-text="Profesionalismul și dedicația personalului medical"
+        />
       </v-col>
       <v-col cols="12" sm="4" md="3" lg="3">
-        <v-card class="mx-auto" color="#05AFF2" width="250" height="250">
-          <v-card-text>
-            <v-img
-              class="mt-2"
-              style="display: block; margin-left: auto; margin-right: auto;"
-              width="50"
-              height="50"
-              :src="require(`./../assets/icons/2.png`)"
-            ></v-img>
-            <p class="text-center white--text mt-4" style="font-size: 12px;">
-              Aparatură medicală stomatologică de ultimă generație
-            </p>
-          </v-card-text>
-        </v-card>
+        <IconCard
+          icon-number="2"
+          card-text="Aparatură medicală stomatologică de ultimă generație"
+        />
       </v-col>
       <v-col cols="12" sm="4" md="3" lg="3">
-        <v-card class="mx-auto" color="#05AFF2" width="250" height="250">
-          <v-card-text>
-            <v-img
-              class="mt-2"
-              style="display: block; margin-left: auto; margin-right: auto;"
-              width="50"
-              height="50"
-              :src="require(`./../assets/icons/3.png`)"
-            ></v-img>
-            <p class="text-center white--text mt-4" style="font-size: 12px;">
-              Tehnici medicale stomatologice inovatoare
-            </p>
-          </v-card-text>
-        </v-card>
+        <IconCard
+          icon-number="3"
+          card-text="Tehnici medicale stomatologice inovatoare"
+        />
       </v-col>
       <v-col cols="12" sm="4" md="3" lg="3">
-        <v-card class="mx-auto" color="#05AFF2" width="250" height="250">
-          <v-card-text>
-            <v-img
-              class="mt-2"
-              style="display: block; margin-left: auto; margin-right: auto;"
-              width="50"
-              height="50"
-              :src="require(`./../assets/icons/4.png`)"
-            ></v-img>
-            <p class="text-center white--text mt-4" style="font-size: 12px;">
-              Adresabilitate maximă corespunzătoare cerințelor pacienților
-            </p>
-          </v-card-text>
-        </v-card>
+        <IconCard
+          icon-number="4"
+          card-text="Adresabilitate maximă corespunzătoare cerințelor pacienților"
+        />
       </v-col>
     </v-row>
   </v-container>
@@ -143,7 +103,7 @@ export default {
       name: 'Coarcă Filofteia',
       grad: 'Medic stomatolog specialist',
       experienta:
-        '33 ani vechime și peste 10.000 de pacienți tratati cu succes',
+        '33 ani vechime și peste 10.000 de pacienți tratați cu succes',
       perfectionare:
         'Continuă prin participare la congrese, simpozioane, workshopuri, cursuri de perfecționare în stomatologie',
       atitudine: 'Hotărîre, perseverență, apropiat și înțelegător cu pacienții',

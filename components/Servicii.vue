@@ -1,8 +1,10 @@
 <template>
-  <v-container class="my-12" fluid style="background-color: #05aff2;">
-    <v-row class="mb-12">
-      <v-col>
-        <h2 class="font-weight-bold text-center white--text">
+  <v-container class="my-12" fluid style="background-color: #2f99ee;">
+    <v-row class="mb-12 pt-14">
+      <v-col
+        style="font-family: Montserrat; font-weight: bold; font-size: 20px;"
+      >
+        <h2 class="text-center white--text">
           Servicii
         </h2>
       </v-col>
@@ -111,34 +113,12 @@
             </v-card>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row class="py-5 mb-5">
           <v-col cols="6" class="text-right">
-            <a
-              style="
-                color: #2d2d2d;
-                background-color: #f2b705;
-                border-radius: 25px;
-                text-align: center;
-                text-decoration: none;
-              "
-              class="px-3 pa-1"
-              href="#"
-              >Preturi</a
-            >
+            <Button button-title="Preturi" />
           </v-col>
           <v-col cols="6" class="text-left">
-            <a
-              style="
-                color: #2d2d2d;
-                background-color: #f2b705;
-                border-radius: 25px;
-                text-align: center;
-                text-decoration: none;
-              "
-              class="px-3 pa-1"
-              href="#"
-              >Contact</a
-            >
+            <Button button-title="Contact" />
           </v-col>
         </v-row>
       </v-card>

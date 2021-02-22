@@ -1,15 +1,26 @@
-/* cyrillic-ext */
 @font-face {
-    font-family: "Ananda";
-    src: url("./AnandaPersonalUse.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Ananda';
+  src: url('~assets/fonts/AnandaPersonalUse.woff') format('woff'),
+    /* Modern Browsers */ url('~assets/fonts/AnandaPersonalUse.woff2')
+      format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  font-family: 'Montserrat';
+  font-style: thin;
+  font-weight: 300;
+  src: url('~assets/fonts/Montserrat-Thin.ttf') format('truetype');
 }
-
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('~assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  src: url('~assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}

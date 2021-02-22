@@ -1,7 +1,15 @@
 <template>
-  <div class="button-custom">
-    <a :href="to">{{ buttonTitle }}</a>
-  </div>
+  <v-btn
+    class="px-7 py-2 mx-1 my-0 button-custom"
+    :style="{
+      background: backgroundColor,
+      fontSize: fontSize + 'px;'
+    }"
+    plain
+    @click.stop="buttonClicked"
+  >
+    {{ buttonTitle }}
+  </v-btn>
 </template>
 <script>
 export default {
@@ -27,18 +35,29 @@ export default {
     fontWeigth: {
       type: Number,
       default: 800
+    },
+    backgroundColor: {
+      type: String,
+      default: '#f2b705'
+    }
+  },
+  methods: {
+    buttonClicked(event) {
+      this.$emit('clicked', event)
     }
   }
 }
 </script>
 <style scoped>
-a {
+.button-custom {
   font-family: 'Montserrat';
-  padding: 0.5em 2.5em;
-  font-size: 0.8em;
   font-weight: 800;
-  background: #f2b705 0% 0% no-repeat padding-box;
-  border-radius: 15px;
+  color: black;
+  border-radius: 25px;
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

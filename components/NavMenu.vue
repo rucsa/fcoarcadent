@@ -1,12 +1,18 @@
 <template>
   <div>
-    <v-app-bar style="background-color: #05aff2;" app dense>
+    <v-app-bar style="background-color: #2f99ee;" app dense>
       <v-container>
         <v-row align="center" no-gutters>
           <v-col sm="3" md="2" lg="2">
             <v-toolbar-title
-              style="color: white; font-family: Montserrat; font-weight: bold;"
-              >FCoarcaDent</v-toolbar-title
+              style="
+                cursor: pointer;
+                color: white;
+                font-family: Montserrat;
+                font-weight: bold;
+              "
+              @click="$router.push('/')"
+              >FCOARCADENT</v-toolbar-title
             >
           </v-col>
           <v-spacer></v-spacer>
@@ -35,7 +41,7 @@
                 'mr-3': $vuetify.breakpoint.sm
               }"
               style="color: white;"
-              href="#"
+              href="/"
               >Servicii Stomatologice</a
             >
 
@@ -49,18 +55,7 @@
               href="/preturi"
               >Preturi</a
             >
-
-            <a
-              style="
-                color: #212121;
-                background-color: #f2b705;
-                border-radius: 25px;
-                text-align: center;
-              "
-              class="px-3"
-              href="#"
-              >Contact</a
-            >
+            <Button button-title="Contact" />
           </v-col>
           <v-col v-if="$vuetify.breakpoint.xsOnly" cols="2">
             <v-app-bar-nav-icon
@@ -69,7 +64,7 @@
           </v-col>
           <v-navigation-drawer
             v-model="drawer"
-            style="background-color: #028cc2;"
+            style="background-color: #2f99ee;"
             right
             absolute
             app

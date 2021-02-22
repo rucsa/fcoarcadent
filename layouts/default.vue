@@ -14,6 +14,19 @@
 export default {}
 </script>
 <style scoped>
+.nav-menu-item-font {
+  font-family: 'Montserrat';
+  font-weight: thin;
+}
+.header-font {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: left;
+  font: normal normal bold 50px/61px Montserrat;
+  letter-spacing: 0px;
+  color: #292a2a;
+  opacity: 1;
+}
 a {
   text-decoration: none;
   color: black;
