@@ -1,6 +1,16 @@
 <template>
   <v-container class="my-5">
-    <h2 class="pl-5 pt-5" style="color: #202020;">Prețuri</h2>
+    <h2
+      class="pl-5 pt-5"
+      style="
+        color: #202020;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 20px;
+      "
+    >
+      Prețuri
+    </h2>
     <v-expansion-panels tile flat class="mb-16 pb-16">
       <v-expansion-panel v-for="item in myJson" :key="item.title">
         <v-expansion-panel-header

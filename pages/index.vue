@@ -55,7 +55,7 @@
                     "
                     class="font-weight-bold p-5 pt-1"
                   >
-                    Si ne luăm <br />
+                    Și respectăm<br />
                     în continuare <br />
                     toate măsurile <br /><span
                       style="
@@ -73,7 +73,11 @@
             </v-row>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <Button button-title="Am ințeles" @clicked="buttonClicked" />
+              <Button
+                button-title="Am ințeles"
+                :has-anchor="false"
+                @clicked="buttonClicked"
+              />
               <v-spacer></v-spacer>
             </v-card-actions>
           </v-img>
@@ -82,8 +86,8 @@
     </div>
     <Cover />
     <DespreComponent />
-    <Servicii />
-    <Contact />
+    <Servicii id="servicii" />
+    <Contact id="contact" />
   </v-container>
 </template>
 

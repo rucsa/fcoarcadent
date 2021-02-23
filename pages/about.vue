@@ -5,7 +5,6 @@
         <v-card flat tile>
           <v-card-text style="color: black; font-size: 15px;">
             <strong>Medic titular: </strong>{{ name }} <br /><br />
-
             <strong>Grad medical: </strong>{{ grad }} <br /><br />
             <strong>Experiență: </strong>{{ experienta }} <br /><br />
             <strong>Perfecționare profesională:</strong>{{ perfectionare }}
@@ -26,11 +25,10 @@
           max-width="600px"
           min-height="300"
           min-width="400"
-          :src="require(`./../assets/DSC_0206.jpg`)"
+          :src="require(`~/assets/img/DSC_0206.JPG`)"
         ></v-img>
       </v-col>
     </v-row>
-
     <v-row justify="center" align="center" class="mt-8 pb-16 mb-16">
       <v-col cols="12" sm="4" md="3" lg="3">
         <IconCard
@@ -58,41 +56,6 @@
       </v-col>
     </v-row>
   </v-container>
-  <!-- <div class="">
-    <div class="">
-      <div class="">
-        <p>Medic titular: {{ name }}</p>
-        <p>Grad medical: {{ grad }}</p>
-        <p>Experiență: {{ experienta }}</p>
-        <p>Perfecționare profesională: {{ perfectionare }}</p>
-        <p>Atitudine: {{ atitudine }}</p>
-        <h3 class="">{{ specialtext }}</h3>
-      </div>
-      <div class="about-intro-img"></div>
-    </div>
-    <div>
-      <div class="">
-        <div class="">
-          <IconCard
-            imagesrc="~/assets/icons/1.png"
-            card-text="Profesionalismul si dedicatia personalului medical"
-          />
-          <IconCard
-            imagesrc="~/assets/icons/2.png"
-            card-text="Aparatura medicala stomatologica de ultima generatie"
-          />
-          <IconCard
-            imagesrc="~/assets/icons/3.png"
-            card-text="Tehnici medicale stomatologice inovatoare"
-          />
-          <IconCard
-            imagesrc="~/assets/icons/4.png"
-            card-text="Adresabilitate maxima corespunzatoare cerințelor pacienților"
-          />
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -121,13 +84,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.about-intro-img {
-  width: 900px;
-  height: 350px;
-  padding: 0 0 0 5vw;
-  box-shadow: 3px 3px 5px grey;
-  background-image: url('./../assets/DSC_0206.jpg');
-  background-repeat: no-repeat;
-}
-</style>
+<style scoped></style>

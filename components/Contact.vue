@@ -1,10 +1,6 @@
 <template>
   <div>
-    <v-container
-      v-if="$vuetify.breakpoint.smAndUp"
-      fluid
-      class="px-0 pb-16 mb-16"
-    >
+    <v-container v-if="$vuetify.breakpoint.smAndUp" class="px-0 pb-16 mb-16">
       <v-row class="pa-25 pb-10">
         <v-col
           cols="12"
@@ -31,9 +27,12 @@
                   <h5 style="font-size: 20px; font-weight: bold;">Adresa</h5>
                   <div>str. Elocinței nr. 36, <br />Sector 1, București</div>
                   <br />
-                  <h5 style="font-size: 20px; font-weight: bold;">
+                  <a
+                    style="font-size: 20px; font-weight: bold; color: black;"
+                    href="tel:+40724545s168"
+                  >
                     +4 0724 545 168
-                  </h5>
+                  </a>
                   <div>filofteiacoarca@yahoo.com</div>
                 </v-col>
               </v-row>

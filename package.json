@@ -33,6 +33,7 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-anchor-router-link": "^0.8.5"
   }
 }

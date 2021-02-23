@@ -33,18 +33,17 @@
               href="/about/"
               >Despre</a
             >
-
-            <a
+            <nuxt-link
               class="pa-2"
               :class="{
                 'mr-5': $vuetify.breakpoint.mdAndUp,
                 'mr-3': $vuetify.breakpoint.sm
               }"
               style="color: white;"
-              href="/"
-              >Servicii Stomatologice</a
+              :to="{ path: '/', hash: '#servicii' }"
             >
-
+              Servicii Stomatologice
+            </nuxt-link>
             <a
               class="pa-2"
               :class="{
@@ -55,7 +54,12 @@
               href="/preturi"
               >Preturi</a
             >
-            <Button button-title="Contact" />
+            <Button
+              button-title="Contact"
+              :has-anchor="true"
+              to="/"
+              anchor="#contact"
+            />
           </v-col>
           <v-col v-if="$vuetify.breakpoint.xsOnly" cols="2">
             <v-app-bar-nav-icon
@@ -145,13 +149,23 @@ export default {
   name: 'NavMenu',
   data: () => ({
     drawer: false,
+    serviciiRoute: { name: 'HomePage', hash: '#servicii' },
     items: [
       { title: 'Despre', to: '/' },
       { title: 'Servicii Stomatologice', to: '/' },
       { title: 'Preturi', to: '/preturi' },
       { title: 'Contact', to: '/' }
     ]
-  })
+  }),
+  created() {
+    console.log(this.$route.hash)
+  },
+  methods: {
+    clearRoute() {
+      console.log('received')
+      console.log(this.$router)
+    }
+  }
 }
 </script>
 <style>

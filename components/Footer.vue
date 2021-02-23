@@ -10,7 +10,7 @@
               'mr-8': $vuetify.breakpoint.xsOnly
             }"
             style="color: white;"
-            href="#"
+            href="/about"
             >Despre</a
           >
 
@@ -21,19 +21,19 @@
               'mx-6': $vuetify.breakpoint.xsOnly
             }"
             style="color: white;"
-            href="#"
+            href="/preturi"
             >Preturi</a
           >
 
-          <a
+          <nuxt-link
             style="color: white;"
             class="pa-2"
             :class="{
               'mr-5': $vuetify.breakpoint.smAndUp,
               'ml-8': $vuetify.breakpoint.xsOnly
             }"
-            href="/preturi"
-            >Servicii</a
+            :to="{ path: '/', hash: '#servicii' }"
+            >Servicii</nuxt-link
           >
         </v-col>
         <v-col
@@ -46,7 +46,9 @@
           <v-spacer> </v-spacer>
 
           <div>
-            <p class="font-weight-bold">{{ actionText }}</p>
+            <a style="font-weight: bold; color: white;" href="tel:+40724545168">
+              {{ actionText }}
+            </a>
           </div>
         </v-col>
         <v-col class="py-4 text-center" cols="12">

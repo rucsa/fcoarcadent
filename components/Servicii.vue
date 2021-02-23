@@ -14,7 +14,7 @@
         <v-row justify="center">
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/profilaxie.png')"></v-img>
+              <v-img :src="require('~/assets/img/profilaxie.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -28,7 +28,7 @@
           </v-col>
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/estetica.png')"></v-img>
+              <v-img :src="require('~/assets/img/estetica.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -42,7 +42,7 @@
           </v-col>
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/Endodontie.png')"></v-img>
+              <v-img :src="require('~/assets/img/Endodontie.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -56,7 +56,7 @@
           </v-col>
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/protetica.png')"></v-img>
+              <v-img :src="require('~/assets/img/protetica.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -71,7 +71,7 @@
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
               <v-img
-                :src="require('./../assets/chirurgie-dentara.png')"
+                :src="require('~/assets/img/chirurgie-dentara.png')"
               ></v-img>
 
               <v-card-text>
@@ -86,7 +86,7 @@
           </v-col>
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/parodontologie.png')"></v-img>
+              <v-img :src="require('~/assets/img/parodontologie.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -100,7 +100,7 @@
           </v-col>
           <v-col cols="6" sm="4" md="3" lg="3">
             <v-card class="mx-auto" max-width="200" tile>
-              <v-img :src="require('./../assets/ortodontie.png')"></v-img>
+              <v-img :src="require('~/assets/img/ortodontie.png')"></v-img>
 
               <v-card-text>
                 <div
@@ -115,85 +115,28 @@
         </v-row>
         <v-row class="py-5 mb-5">
           <v-col cols="6" class="text-right">
-            <Button button-title="Preturi" />
+            <Button
+              :has-anchor="false"
+              button-title="Preturi"
+              path="/preturi"
+            />
           </v-col>
           <v-col cols="6" class="text-left">
-            <Button button-title="Contact" />
+            <Button
+              button-title="Contact"
+              :has-anchor="true"
+              path="/"
+              anchor="#contact"
+            />
           </v-col>
         </v-row>
       </v-card>
     </v-row>
   </v-container>
-  <!-- <div class="section servicii">
-    <h1 class="center">Servicii Stomatologice</h1>
-    <div class="card-container">
-      <Card class="profilaxie" card-title="PROFILAXIE" card-text="cardtext1" />
-      <Card
-        class="estetica-dentara"
-        card-title="ESTETICA DENTARA"
-        card-text="cardtext1"
-      />
-      <Card class="endodontie" card-title="ENDODONTIE" card-text="cardtext1" />
-      <Card class="proteica" card-title="PROTETICA" card-text="cardtext1" />
-      <Card
-        class="chirurgie-dentara"
-        card-title="CHIRURGIE  DENTARA"
-        card-text="cardtext1"
-      />
-      <Card
-        class="parodontologie"
-        card-title="PARODONTOLOGIE"
-        card-text="cardtext1"
-      />
-      <Card class="ortodontie" card-title="ORTODONTIE" card-text="cardtext1" />
-    </div>
-  </div> -->
 </template>
 <script>
 export default {
   name: 'Servicii'
 }
 </script>
-<style scoped>
-.card-container {
-  padding: 0px 15em;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.profilaxie {
-  background-image: url('./../assets/profilaxie.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.estetica-dentara {
-  background-image: url('./../assets/estetica.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.endodontie {
-  background-image: url('./../assets/Endodontie.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.proteica {
-  background-image: url('./../assets/protetica.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.chirurgie-dentara {
-  background-image: url('./../assets/chirurgie-dentara.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.parodontologie {
-  background-image: url('./../assets/parodontologie.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.ortodontie {
-  background-image: url('./../assets/ortodontie.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-</style>
+<style scoped></style>

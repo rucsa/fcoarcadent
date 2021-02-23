@@ -4,13 +4,10 @@
       <v-row>
         <v-col>
           <v-card v-if="$vuetify.breakpoint.smAndUp" flat tile>
-            <v-img max-height="702px" :src="require(`./../assets/LPPhoto.png`)">
-              <!-- <v-container
-              class="pa-0 red align-center"
-              style="margin-top: 200px;"
-            > -->
-              <!-- <v-row align="center" style="margin-top: 200px;">
-              <v-col cols="12"> -->
+            <v-img
+              max-height="702px"
+              :src="require(`~/assets/img/LPPhoto.png`)"
+            >
               <v-card-text class="white--text pl-0" style="margin-top: 200px;">
                 <v-row>
                   <v-col
@@ -87,14 +84,20 @@
                   <v-col cols="4" sm="6" md="5" lg="4" class="mx-16 mt-8">
                     <v-spacer />
                     <v-spacer />
-                    <Button button-title="Afla mai multe" @clicked="toAbout" />
-                    <Button button-title="Prețuri" />
+                    <Button
+                      button-title="Afla mai multe"
+                      :has-anchor="false"
+                      path="/about"
+                      @clicked="toAbout"
+                    />
+                    <Button
+                      button-title="Prețuri"
+                      :has-anchor="false"
+                      path="/preturi"
+                    />
                   </v-col>
                 </v-row>
               </v-card-text>
-              <!-- </v-col>
-            </v-row> -->
-              <!-- </v-container> -->
             </v-img>
           </v-card>
           <v-container
@@ -112,8 +115,6 @@
                   {{ title }}
                 </h2>
               </v-col>
-              <!-- </v-row>
-            <v-row> -->
               <v-col cols="12">
                 <h1
                   class="font-italic text-center"
@@ -122,8 +123,6 @@
                   {{ title2 }}
                 </h1>
               </v-col>
-              <!-- </v-row>
-            <v-row> -->
               <v-col cols="12">
                 <h4
                   style="font-size: 20px;"
@@ -140,34 +139,10 @@
       </v-row>
     </v-container>
   </div>
-
-  <!-- <div class="cover">
-    <div class="cover-content">
-      <div class="cover-text">
-        <h1 class="h1 anada">{{ title }}</h1>
-        <h1 class="h1">
-          <span class="monser">{{ title2 }}</span>
-        </h1>
-        <h3 class="h3">
-          <span class="text-medium">Lucrăm cu oameni </span><br /><span
-            class="text-bold"
-            >și pentru oameni</span
-          >
-        </h3>
-      </div>
-      <div class="cover-buttons flex center-items center">
-        <Button button-title="Despre noi" to="#" />
-        <Button button-title="Contact" to="#" />
-      </div>
-    </div>
-  </div> -->
 </template>
 <script>
-// import Button from '~/components/Button.vue'
-
 export default {
   name: 'Cover',
-  // components: { Button },
   data() {
     return {
       title: 'Cabinet Stomatologic',
@@ -182,33 +157,6 @@ export default {
 }
 </script>
 <style scoped>
-/* h1,
-.anada {
-  font-family: 'Ananda';
-}
-
-h2,
-.monser {
-  font-family: 'Montserrat';
-}
-
-.cover {
-  background-image: url('./../assets/LPPhoto.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 100vw;
-  height: 702px;
-  border: 1px solid black;
-}
-.cover-content {
-  position: relative;
-  top: 10em;
-  left: 6em;
-  width: 25em;
-  height: 20em;
-  border: 1px solid black;
-} */
-
 a:hover {
   text-decoration: none;
 }

@@ -35,12 +35,16 @@
               <Button
                 class="px-1"
                 button-title="Servicii"
-                @clicked="router.push('/about/')"
+                :has-anchor="true"
+                path="/"
+                anchor="#servicii"
               />
               <Button
                 class="px-1"
                 button-title="Contact"
-                @clicked="router.push('/about/')"
+                :has-anchor="true"
+                path="/"
+                anchor="#contact"
               />
             </v-card-actions>
           </v-card>

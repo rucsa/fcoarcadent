@@ -1,5 +1,6 @@
 <template>
   <v-btn
+    v-if="!hasAnchor"
     class="px-7 py-2 mx-1 my-0 button-custom"
     :style="{
       background: backgroundColor,
@@ -7,8 +8,18 @@
     }"
     plain
     @click.stop="buttonClicked"
+    >{{ buttonTitle }}
+  </v-btn>
+  <v-btn
+    v-else
+    class="px-7 py-2 mx-1 my-0 button-custom"
+    :style="{
+      background: backgroundColor,
+      fontSize: fontSize + 'px;'
+    }"
+    plain
   >
-    {{ buttonTitle }}
+    <nuxt-link :to="to" color="black"> {{ buttonTitle }}</nuxt-link>
   </v-btn>
 </template>
 <script>
@@ -16,6 +27,11 @@ export default {
   name: 'Button',
   props: {
     anchor: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    hasAnchor: {
       type: Boolean,
       required: false,
       default: false
@@ -24,7 +40,7 @@ export default {
       type: String,
       default: ''
     },
-    to: {
+    path: {
       type: String,
       default: ''
     },
@@ -39,6 +55,11 @@ export default {
     backgroundColor: {
       type: String,
       default: '#f2b705'
+    }
+  },
+  computed: {
+    to() {
+      return this.hasAnchor ? { path: this.path, hash: this.anchor } : this.path
     }
   },
   methods: {
